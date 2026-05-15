@@ -143,18 +143,22 @@
         <div class="contact-info-card"><div class="icon">📞</div><h3>お電話でのお問い合わせ</h3><p>043-400-3610</p></div>
         <div class="contact-info-card"><div class="icon">✉️</div><h3>メールでのお問い合わせ</h3><p>chiba@kokorozashi-support.com</p></div>
       </div>
+      <form method="POST" action="https://formspree.io/f/mqenvyna">
+        <input type="hidden" name="_next" value="https://kokorozashi-support.com/contact.html">
+        <input type="hidden" name="_subject" value="【こころざし】お問い合わせが届きました">
       <div class="form-2col">
-        <div class="form-row"><label>会社名 <span class="required">※必須</span></label><input type="text" placeholder="株式会社○○"></div>
-        <div class="form-row"><label>お名前 <span class="required">※必須</span></label><input type="text" placeholder="山田 太郎"></div>
+        <div class="form-row"><label>会社名 <span class="required">※必須</span></label><input type="text" name="company" placeholder="株式会社○○"></div>
+        <div class="form-row"><label>お名前 <span class="required">※必須</span></label><input type="text" name="name" placeholder="山田 太郎"></div>
       </div>
       <div class="form-2col">
-        <div class="form-row"><label>メールアドレス <span class="required">※必須</span></label><input type="email" placeholder="example@company.co.jp"></div>
-        <div class="form-row"><label>電話番号</label><input type="tel" placeholder="043-000-0000"></div>
+        <div class="form-row"><label>メールアドレス <span class="required">※必須</span></label><input type="email" name="email" placeholder="example@company.co.jp"></div>
+        <div class="form-row"><label>電話番号</label><input type="tel" name="phone" placeholder="043-000-0000"></div>
       </div>
-      <div class="form-row"><label>業種</label><input type="text" placeholder="例：建設業・自動車整備業・その他"></div>
-      <div class="form-row"><label>お問い合わせ内容 <span class="required">※必須</span></label><textarea placeholder="ご質問・ご相談内容をご記入ください"></textarea></div>
-      <div class="form-submit"><button class="btn-submit" type="button">送信する</button></div>
-      <p class="form-note">※このフォームは叩き台のため送信機能は未実装です。<br>※個人情報は本件の対応にのみ使用します。</p>
+      <div class="form-row"><label>業種</label><input type="text" name="industry" placeholder="例：建設業・自動車整備業・その他"></div>
+      <div class="form-row"><label>お問い合わせ内容 <span class="required">※必須</span></label><textarea name="message" placeholder="ご質問・ご相談内容をご記入ください"></textarea></div>
+      <div class="form-submit"><button class="btn-submit" type="submit">送信する</button></div>
+      <p class="form-note">※個人情報は本件の対応にのみ使用します。</p>
+      </form>
     </div>
   </div>
 </section>

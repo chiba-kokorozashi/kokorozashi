@@ -339,3 +339,12 @@ p{margin:0 0 1em}
   .hero h1 .ln>span{transform:none!important}
 }
 .sp{display:none}@media(max-width:600px){.sp{display:inline}}
+
+/* 整備ラボへの導線 */
+.lab{display:grid;grid-template-columns:auto 1fr auto;grid-template-areas:"tag tag go" "ttl ttl go" "txt txt go";gap:4px 20px;align-items:center;margin-top:18px;background:var(--navy);color:#fff;text-decoration:none;border-radius:var(--r);padding:22px 26px;transition:background .2s}
+.lab:hover{background:var(--navy-d)}
+.lab-tag{grid-area:tag;font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.06em}
+.lab b{grid-area:ttl;font-size:18px}
+.lab-txt{grid-area:txt;font-size:14px;color:#C9D5E3}
+.lab-go{grid-area:go;background:var(--gold);color:#fff;font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px;white-space:nowrap}
+@media(max-width:760px){.lab{grid-template-areas:"tag" "ttl" "txt" "go";grid-template-columns:1fr}.lab-go{text-align:center;margin-top:8px}}
